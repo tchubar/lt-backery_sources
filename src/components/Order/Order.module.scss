@@ -1,0 +1,218 @@
+.Order {
+    width: 100%;
+    height: 1720px;
+    box-sizing: content-box;
+    margin-top: -50px;
+    // top: -285px;
+    // position: relative;
+
+    padding: 0 !important;
+
+    @media screen and (max-width: 1280px){
+        height: 1105px;
+    }
+
+    @media screen and (max-width: 750px){
+
+        height: 798px;
+    }
+}
+
+.Head {
+    width: 100%;
+    height: 296px;
+
+    @media screen and (max-width: 1280px){
+        height: 158px;
+    }
+
+    @media screen and (max-width: 750px){
+        height: 138px;
+    }
+
+    &__title {
+        position: relative;
+        left: 20px;
+        top: 110px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 0.4px;
+
+        color: #A54220;
+
+        @media screen and (max-width: 1280px){
+            font-size: 36px;
+            line-height: 49px;
+            text-align: center;
+            letter-spacing: 0.4px;
+            top: 35px;
+            left: 1px;
+        }
+
+        @media screen and (max-width: 750px){
+            top: 25px;
+            left: 8px;
+        }
+
+        @media screen and (max-width: 688px) {
+            top: 40px;
+            font-size: 24px;
+            line-height: 33px;
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        left: 20px;
+        top: 70px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.12em;
+
+        color: #403F3D;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.12em;
+            top: 5px;
+            left: 1px;
+        }
+
+        @media screen and (max-width: 750px){
+            top: -8px;
+            left: 8px;
+        }
+
+        @media screen and (max-width: 688px) {
+            top: 25px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
+.Form {
+    height: 1425px;
+    width: 100%;
+    background: url('../../img/cake2.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 143px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 1280px) {
+        padding-top: 107px;
+        height: 949px;
+    }
+
+    @media screen and (max-width: 750px){
+
+        height: 658px;
+    }
+
+    &__input {
+        display: block;
+        width: 684px;
+        height: 89px;
+        margin: auto;
+        position: relative;
+        left: 3px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1), 0px -5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 29px;
+        outline: none;
+        padding: 0 30px;
+        resize: vertical;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 1280px) {
+            left: 0px;
+            width: 455px;
+            height: 59px;
+            margin-bottom: 20px;
+            padding: 0 21px;
+        }
+
+        @media screen and (max-width: 1280px) {
+            left: 8px;
+            top: -42px;
+            width: 314px;
+            height: 40px;
+            margin-bottom: 14px;
+            padding: 0 14px;
+        }
+
+        &_textarea {
+            height: 349px;
+            padding-top: 30px;
+
+            @media screen and (max-width: 1280px) {
+                height: 232px;
+                padding-top: 21px;
+            }
+
+            @media screen and (max-width: 750px) {
+                height: 160px;
+                padding-top: 14px;
+            }
+        }
+    }
+
+    &__input, &__input::placeholder {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+
+        letter-spacing: 0.12em;
+
+        color: #B1B1B1;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        @media screen and (max-width: 750px) {
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+
+            letter-spacing: 0.12em;
+        }
+    }
+
+    &__submit {
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 35px;
+        left: 5px;
+
+        @media screen and (max-width: 1280px) {
+            top: 14px;
+            left: -1px;
+        }
+
+        @media screen and (max-width: 750px) {
+            top: -25px;
+            left: 6px;
+        }
+    }
+}

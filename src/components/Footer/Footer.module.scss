@@ -1,0 +1,30 @@
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    height: 357px;
+    width: 100%;
+    padding-top: 72px !important;
+    overflow-x: hidden;
+    // top: -285px;
+    // position: relative;
+
+    @media screen and (max-width: 1280px) {
+        height: 238px;
+        padding-top: 55px !important;
+    }
+
+    @media screen and (max-width: 750px) {
+
+        padding-top: 0px !important;
+        height: 135px;
+    }
+
+    @media screen and (max-width: 688px) {
+        flex-direction: column;
+
+        height: 600px;
+    }
+
+}

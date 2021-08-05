@@ -1,0 +1,77 @@
+.InfoBlock {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.4px;
+    color: var(--secondary-color);
+    min-width: 180px;
+    margin-left: 66px;
+    margin-top: -9px;
+    /* width: 180px; */
+    position: relative;
+
+    @media screen and (max-width: 1280px) {
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        margin-left: 60px;
+        top: 5px;
+        left: -60px;
+    }
+
+    @media screen and (max-width: 980px) {
+
+    }
+
+    @media screen and (max-width: 750px) {
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        margin-left: 35px;
+        left: -32px;
+        top: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+        top: 3px;
+        left: -17px;
+    }
+
+    @media screen and (max-device-width: 600px) {
+        min-width: 120px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.4px;
+    }
+
+    &_footer {
+        margin-left: 0;
+        left: 0;
+        text-align: left;
+
+        @media screen and (max-width: 750px) {
+            font-size: 12px;
+            line-height: 16px;
+            // margin: 0px 10px;
+            min-width: 100px;
+            top: -3px;
+            // left: -34px;
+        }
+
+
+        @media screen and (max-width: 688px) {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+

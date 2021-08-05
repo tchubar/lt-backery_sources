@@ -1,0 +1,197 @@
+.Slider {
+    width: 100%;
+    height: 280px;
+
+    position: absolute;
+    top: 940px;
+    margin: auto;
+    // padding: 0 100px !important;
+    overflow-x: hidden;
+
+    @media screen and (max-width: 1800px) {
+        top: 630px;
+    }
+
+    @media screen and (max-width: 1380px) {
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }
+
+    @media screen and (max-width: 1200px) {
+        top: 560px;
+    }
+
+    // @media screen and (max-width: 980px) {
+    //     // top: 1382px;
+    //     top: 360px;
+    //     // position: relative;
+    //     height: 520px;
+
+    // }
+
+    @media screen and (max-width: 980px) {
+        position: relative;
+        margin-top: 450px;
+        top: 0px;
+        height: 520px;
+    }
+
+    @media screen and (max-width: 688px) {
+        position: relative;
+        margin-top: -150px;
+        top: 0px;
+        height: 520px;
+    }
+
+    &__track {
+        width: 1500px;
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+        margin: auto;
+        justify-content: space-between;
+        flex-direction: row;
+
+        @media screen and (max-width: 1800px) {
+            width: 1070px;
+        }
+
+        @media screen and (max-width: 1500px) {
+        }
+
+        @media screen and (max-width: 1380px) {
+            left: 50%;
+        }
+
+        @media screen and (max-width: 1250px) {
+            width: 850px;
+        }
+
+        @media screen and (max-width: 1040px) {
+            width: 650px;
+        }
+
+
+        @media screen and (max-width: 980px) {
+            width: 520px;
+            height: 520px;
+        }
+
+        @media screen and (max-width: 688px) {
+            width: 280px;
+            height: 280px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            margin-left: 0;
+        }
+
+    }
+
+    &__button {
+        width: 85px;
+        height: 85px;
+        position: absolute;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 0 15px grey;
+
+        @media screen and (max-width: 1800px) {
+            height: 57px;
+            width: 57px;
+        }
+
+
+        @media screen and (max-width: 688px) {
+            height: 40px;
+            width: 40px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &_prev {
+            left: 53px;
+            top: 35%;
+
+            @media screen and (max-width: 1800px) {
+                left: 30px;
+                top: 22%;
+            }
+
+            @media screen and (max-width: 980px) {
+                left: 20px;
+                top: 40%;
+            }
+
+            @media screen and (max-width: 688px) {
+                top: 25%;
+            }
+        }
+
+        &_next {
+            right: 53px;
+            top: 35%;
+            transform: rotate(180deg);
+
+            @media screen and (max-width: 1800px) {
+                right: 30px;
+                top: 22%;
+            }
+
+            @media screen and (max-width: 980px) {
+                right: 20px;
+                top: 40%;
+            }
+
+            @media screen and (max-width: 688px) {
+                top: 25%;
+            }
+        }
+    }
+}
+
+
+.Slide {
+    width: 280px;
+    margin: 0 10px;
+    height: 100%;
+    background-color: white;
+    transition: .1s;
+    border-radius: 50%;
+
+    &:nth-child(2n) {
+        background-color: red;
+    }
+
+    &:nth-child(2n + 1) {
+        background-color: blue;
+    }
+
+    &:nth-child(2n + 2) {
+        background-color: pink;
+    }
+
+    @media screen and (max-width: 1800px) {
+        height: 188px;
+        width: 188px;
+        margin: 0 13px;
+    }
+
+    @media screen and (max-width: 980px) {
+        width: 500px;
+        height: 500px;
+    }
+
+    @media screen and (max-width: 688px) {
+        width: 280px;
+        height: 280px;
+        // object-fit:cover;
+        margin: 0;
+
+    }
+}

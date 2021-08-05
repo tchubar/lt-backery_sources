@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+svg:not(:root) {
+  overflow: visible;
+}
+
+:root {
+  --main-color: #A54220;
+  --secondary-color: #403F3D;
+
+  --main-padding-lg: 0 150px 0 163px; /* 1920 */
+  --main-padding-xl: 0 108px; /* 1280 */
+  --main-padding-xl_mini: 0 54px; /* 1130 */
+  --main-padding-md: 0 90px;  /* 980 */
+  --main-padding-sm: 0 77px; /* 750 */
+  --main-padding-xs: 0 21px; /* mobile */
+  --main-padding-mobile: 0 15px;
+
+  --header-height-full: 130px;
+  --header-height-mini: 120px;
+
+
+  scroll-behavior: smooth;
+}
+
+svg {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#root > * {
+  padding: var(--main-padding-lg);
+  box-sizing: border-box;;
+}
+
+@media screen and (max-width: 1300px) {
+  #root > * {
+    padding: var(--main-padding-xl);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #root > * {
+    padding: var(--main-padding-xl_mini);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #root > * {
+    padding: var(--main-padding-md);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #root > * {
+    padding: var(--main-padding-sm);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #root > * {
+    padding: var(--main-padding-xs);
+  }
+}
+
+@media screen and (max-device-width: 500px) {
+  #root > * {
+    padding: var(--main-padding-mobile);
+  }
+}

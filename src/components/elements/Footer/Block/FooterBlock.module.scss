@@ -1,0 +1,65 @@
+.FooterBlock {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1280px) {
+        &:first-child {
+            margin-right: 130px;
+        }
+
+    }
+
+    @media screen and (max-width: 1100px) {
+        &:first-child {
+            margin-right: 0px;
+        }
+
+    }
+
+    @media screen and (max-width: 688px) {
+        &:last-child {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    @media screen and (max-width: 688px) {
+    }
+
+    &__title {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        /* identical to box height, or 139% */
+
+        text-align: center;
+        letter-spacing: 0.6px;
+
+        color: #A54220;
+        align-self: flex-start;
+        margin-bottom: 18px;
+
+        @media screen and (max-width: 1280px) {
+            margin-bottom: 5px;
+
+
+            font-size: 18px;
+            line-height: 50px;
+            letter-spacing: 0.6px;
+        }
+
+        @media screen and (max-width: 750px) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 688px) {
+            font-size: 24px;
+            line-height: 50px;
+        }
+    }
+}

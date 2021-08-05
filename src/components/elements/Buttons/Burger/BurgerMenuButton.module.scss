@@ -1,0 +1,14 @@
+.BurgerMenu {
+  display: none;
+  width: 65px;
+  margin-left: auto;
+
+  @media screen and (max-width: 980px) {
+    display: block;
+  }
+
+  @media screen and (max-device-width: 500px){
+    width: 50px;
+    display: block;
+  }
+}

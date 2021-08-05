@@ -1,0 +1,35 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 980px) {
+        display: none;
+    }
+
+    &__link {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 70px;
+        text-align: center;
+        letter-spacing: 0.9px;
+
+        color: #343331;
+
+        text-decoration: none;
+        transition: .3s;
+
+        &:hover {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            color: #A54220;
+        }
+
+        @media screen and (max-width: 1380px) {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}
